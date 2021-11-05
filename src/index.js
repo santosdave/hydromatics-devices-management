@@ -1,8 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import "react-app-polyfill/stable"
+import "core-js"
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+/* import { Provider } from 'react-redux' */
 
 ReactDOM.render(
   <React.StrictMode>
