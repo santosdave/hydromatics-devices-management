@@ -4,12 +4,13 @@ import "react-app-polyfill/stable"
 import "core-js"
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-/* import { Provider } from 'react-redux' */
+import { Provider } from 'react-redux';
+import store from './store';
 
 ReactDOM.render(
-  <React.StrictMode>
+  <Provider store={store}> 
     <App />
-  </React.StrictMode>,
+  </Provider>,
   document.getElementById('root')
 );
 
